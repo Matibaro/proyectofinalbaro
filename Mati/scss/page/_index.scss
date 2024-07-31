@@ -1,0 +1,158 @@
+.portada__foto {
+    width: 15rem;
+    padding-top: 6rem;
+    transform: scale(1.13);
+}
+
+@media (min-width: 1000px) {
+
+    .portada {
+        &__foto {
+            width: 20rem;
+            padding-top: 10rem;
+            margin-right: 3rem;
+        }
+
+        &__texto {
+            padding-left: 65px;
+
+        }
+    }
+}
+
+@media (max-width: 349px) {
+    .portada__titulo {
+        font-size: 29px;
+    }
+}
+
+.float {
+    background-color: $color-primario;
+    width: 80vw;
+    height: 70px;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    box-shadow: $sombra-titulo;
+
+    &__separador {
+        font-weight: 100;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1470px) {
+    .float {
+        display: none;
+    }
+}
+
+.servicios {
+
+    &__time {
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+    &__warranty {
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+    &__lab {
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+
+    &__chat {
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
+}
+
+.clientes {
+
+    &__title {
+        background-color: $color-primario;
+        color: white;
+        padding-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow: $sombra-titulo
+    }
+
+    &__op1 {
+        width: 300px;
+        background-color: $color-secundario;
+        font-family: Helvetica, sans-serif;
+        font-size: 10px;
+        color: #000;
+        padding-top: 10rem;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+        & img {
+
+            width: 50px;
+        }
+    }
+
+    &__op2 {
+
+        width: 300px;
+        background-color: $color-secundario;
+        color: #000;
+        padding-top: 10rem;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        & img {
+
+            width: 50px;
+        }
+    }
+
+    &__op3 {
+
+        width: 300px;
+        background-color: $color-secundario;
+        color: #000;
+        padding-top: 10rem;
+        border-radius: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+
+        & img {
+
+            width: 50px;
+        }
+    }
+
+}
